@@ -1,0 +1,85 @@
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(5,144,214);
+    background: linear-gradient(90deg, rgba(5,144,214,1) 0%, rgba(23,103,179,1) 54%);
+}
+
+.mainContainer{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+}
+
+.mainContainer ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin-top: 40px;
+    color: white;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+
+
+.mainContainer ul li{
+    max-width: 180px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    margin: 60px;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.mainContainer ul li h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mainContainer ul li p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+.mainContainer ul li p:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainLogoHere{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px){
+    .mainLogoHere svg{
+        transform: scale(0.8);
+    }
+}
