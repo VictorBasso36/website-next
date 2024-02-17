@@ -1,4 +1,25 @@
 .main{
-    width: 100%;
+    width: 100vw;
     padding: 0px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    justify-content: center;
+    background-color: aqua;
+    background-image: url('/mainBannerBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: right;
+}
+
+.mainContainer{
+    width: 90%;
+    height: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }

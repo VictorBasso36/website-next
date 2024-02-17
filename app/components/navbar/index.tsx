@@ -21,7 +21,41 @@ export default function Navbar() {
         { menu && 
             <div className={styles.mainMenuHere} onClick={() => setMenu(!menu)}>
                 <div className={styles.ModalHere}>
-a
+                    <ul>
+                        <li>
+                            <Link href="/">
+                                <p><strong>Home</strong></p>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <p>Lançamentos</p>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <p>Portfólio</p>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <p>Invista conosco</p>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <p>Contato</p>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <button className={styles.mainButton}>
+                                    <p><strong>Área do Cliente</strong></p>
+                                </button>
+                            </Link>
+                        </li>
+                        <br />
+                    </ul> 
                 </div>
             </div>
         }
