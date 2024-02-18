@@ -79,54 +79,6 @@
 }
 
 
-
-@media screen and (min-width: 0px) and (max-width: 1024px) {
-
-    .main{
-        margin-top: -40px;
-        width: 100vw;
-        padding: 0px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
-        justify-content: center;
-        background-color: white;
-        background-image: url('/formBG.png');
-        background-position: left;
-        background-repeat: no-repeat;
-        min-height: 500px;
-        padding-bottom: 60px;
-        padding-top: 40px;
-    }
-
-    .mainContainer h4{
-        font-size: 20pt;
-        transform: scale(1.1);
-        line-height: 90%;
-        font-weight: 400;
-        text-align: center;
-        color: var(--textBlackColor);
-    }
-
-    .formDiv{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .formDiv input:nth-child(1){
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    .formDiv input:nth-child(2){
-        width: 100%;
-    }
-}
-
-
 @media screen and (min-width: 550px) and (max-width: 850px) {
     .mainContainer h4{
         font-size: 3rem;
@@ -197,5 +149,57 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+
+    .main{
+        margin-top: -40px;
+        width: 100vw;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+        justify-content: center;
+        background-color: white;
+        background-image: unset;
+        background-position: left;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        padding-bottom: 60px;
+        padding-top: 40px;
+    }
+
+    .mainContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainContainer h4{
+        font-size: 20pt;
+        transform: scale(1.1);
+        line-height: 90%;
+        font-weight: 400;
+        text-align: center;
+        color: var(--textBlackColor);
+    }
+
+    .formDiv{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .formDiv input:nth-child(1){
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .formDiv input:nth-child(2){
+        width: 100%;
     }
 }

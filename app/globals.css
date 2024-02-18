@@ -72,3 +72,64 @@ p {
 }
 
 
+
+
+.swiper-pagination{
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.bulletperso{
+  background-color: green;
+  height: 25px;
+  width:45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+
+
+/* target all bullets */
+.swiper-pagination-bullet {
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  opacity: 0.8;
+  width: 45px;
+  height: 10px;
+  margin: 5px;
+}
+/* target the active bullet */
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: white!important;
+
+ 
+}
+
+.swiper-slide{
+  transform: scale(0.6)!important;
+  transition: all 500ms ease-in-out;
+}
+
+.swiper-slide-prev {
+  transform: scale(0.6)!important;
+  transition: all 500ms ease-in-out;
+}
+
+.swiper-slide-next {
+  transform: scale(0.6)!important;
+  transition: all 500ms ease-in-out;
+}
+
+.swiper-slide-active{
+
+  transform: scale(1)!important;
+}

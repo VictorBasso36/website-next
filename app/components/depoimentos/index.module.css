@@ -1,8 +1,8 @@
 .main{
     margin-top: -4%;
     width: 100vw;
-    padding: 0px;
-    height: 80vh;
+    padding-bottom: 120px;
+    height: 550px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,13 +12,90 @@
     background: linear-gradient(90deg, rgba(5,144,214,1) 23%, rgba(23,103,179,1) 56%);
 }
 
+.mainContainer{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiperModal{
+    display: flex;
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SlideMain{
+    height: 100%;
+    max-width: 450px;
+    width: 100%;
+}
+
+.cardCarrousel{
+    padding: 20px 20px 40px 20px;
+    pointer-events: none;
+    border-radius: 30px;
+    transition: all 500ms ease-in-out;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    color: white;
+    font-size: 20px;
+}
+
+.HeaderCarrouselItems{
+    height: auto;
+    height: 90px;
+    display: flex;
+    margin-top: -15px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.mainTitle{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.mainTitle p:nth-child(1){
+    margin-top: -60px;
+}
+
+.mainDescription strong{
+    text-decoration: underline red;
+}
+
+.cardImage{
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 120px;
+}
+
+.cardText{
+    text-align: left;
+    font-size: 18px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 1024px) {
 
     .main{
         margin-top: -40px;
         width: 100vw;
         padding: 0px;
-        height: 80vh;
+        height: 600px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -28,4 +105,76 @@
         background: linear-gradient(90deg, rgba(5,144,214,1) 23%, rgba(23,103,179,1) 56%);
     }
 
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 850px){
+
+    .HeaderCarrouselItems{
+        height: auto;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        margin-top: -15px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .mainTitle{
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .mainTitle p:nth-child(1){
+        margin-top: 0px;
+    }
+
+    .cardImage{
+        height: 120px;
+        background-position: center;
+        background-size: cover;
+        margin-top: -60px;
+        border-radius: 100%;
+        width: 120px;
+    }
+
+    .mainContainer{
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardCarrousel{
+        padding: 20px 20px 40px 20px;
+        pointer-events: none;
+        border-radius: 30px;
+        transition: all 500ms ease-in-out;
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: rgba( 255, 255, 255, 0.25 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        color: white;
+        font-size: 20px;
+    }
+
+    .cardText{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .swiperModal{
+        display: flex;
+        text-align: center;
+        padding-top: 60px;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

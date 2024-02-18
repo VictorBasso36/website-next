@@ -9,7 +9,7 @@ export default function QuemSomos() {
     <section className={styles.main}>
       <div className={styles.mainContainer}>
         <h3>O que <strong>fazemos de <span>melhor</span></strong>:</h3>
-        <p>
+        <p className={styles.quemSomosText}>
           Localizada em Sto. André, no coração do ABC Paulista, somos <br /> especialistas em construir lares, onde cada tijolo conta histórias <br /> de <strong>famílias realizadas</strong>. <br /><br />
 
           Escolher a Villasul é optar por uma parceria dedicada à concretização de sonhos. <br /><br />
