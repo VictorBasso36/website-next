@@ -7,7 +7,7 @@
     flex-direction: column;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
     justify-content: center;
-    background-color: aqua;
+
     background-image: url('/mainBannerBG.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,4 +22,144 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+}
+
+.mainContainer h1{
+    font-size: 45pt;
+    line-height: 90%;
+    margin-bottom: 50px;
+    color: var(--textBlackColor);
+}
+
+.mainContainer h1 span{
+    background: rgb(5,144,214);
+    background-clip: text;
+    background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.TelBanner{
+    font-size: 25pt;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    color: var(--textBlackColor);
+}
+
+.TelBanner span{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .main{
+        width: 100vw;
+        padding: 0px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        justify-content: center;
+        background-image: url('/whitehome_15650568.jpg.png');
+        background-position: bottom;
+        position: relative;
+    }
+    
+
+    .mainContainer{
+        width: 90%;
+        height: 100%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    .mainContainer h1{
+        font-size: 30pt;
+        line-height: 90%;
+        margin-bottom: 50px;
+        text-align: center;
+        color: var(--textBlackColor);
+    }
+    
+    .mainContainer h1 span{
+        background: rgb(5,144,214);
+        background-clip: text;
+        background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .TelBanner{
+        font-size: 25pt;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        color: var(--textBlackColor);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1124px) {
+    .main{
+        width: 100vw;
+        padding: 0px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        justify-content: center;
+    
+        background-image: url('/mainBannerBG.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: right;
+        background-position-x: -30vw;
+    }
+}
+
+@media screen and (min-width: 1124px) and (max-width: 1224px) {
+    .main{
+        width: 100vw;
+        padding: 0px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        justify-content: center;
+    
+        background-image: url('/mainBannerBG.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: right;
+        background-position-x: -20vw;
+    }
+}
+
+@media screen and (min-width: 1224px) and (max-width: 1424px) {
+    .main{
+        width: 100vw;
+        padding: 0px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        justify-content: center;
+    
+        background-image: url('/mainBannerBG.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: right;
+        background-position-x: -30vw;
+    }
 }

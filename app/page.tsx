@@ -6,6 +6,8 @@ import MainBanner from "./components/homeBanner";
 import Empreendimentos from "./components/carrouselEmpreendimentos";
 import QuemSomos from "./components/quemSomos";
 import HomeForm from "./components/homeForm";
+import Depoimentos from "./components/depoimentos";
+import { url } from "inspector";
 
 export default function Home() {
   return (
@@ -15,7 +17,10 @@ export default function Home() {
         <MainBanner />
         <Empreendimentos />
         <QuemSomos />
+        <div className={styles.quemSomosImage} style={{backgroundImage: 'url("/responsivoQuemSomos.png")' }} ></div>
+        <Depoimentos />
         <HomeForm />
+        <div className={styles.quemSomosImage} style={{backgroundImage: 'url("/responsivoForms.png")' }} ></div>
       </main>
       <Footer/>
     </>
