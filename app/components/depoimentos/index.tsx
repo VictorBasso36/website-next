@@ -63,7 +63,7 @@ export default function Depoimentos() {
           </div>
           <div className={styles.cardText}>
               <p>“Eles (Villasul) me atenderam muito bem desde o começo, super atenciosos e cuidados... <br /><br />
-                A qualidade da entrega do meu apartamento foi surreal, eu e minha esposa amamos tudo!"</p>
+                A qualidade da entrega do meu apartamento foi surreal, eu e minha esposa amamos tudo!“</p>
           </div>
         </div>
     </SwiperSlide>
