@@ -8,7 +8,7 @@ export default function Empreendimentos() {
     <section className={styles.main}>
       <div className={styles.mainContainer}>
         <h2>Seu futuro <strong>te <span>espera:</span></strong></h2>
-        <p>Conheça unidades disponíveis para <strong>venda</strong> e <strong>locação.</strong></p>
+        <p className={styles.titleDescription}>Conheça unidades disponíveis para <strong>venda</strong> e <strong>locação.</strong></p>
       </div>
     </section>
   );
