@@ -1,12 +1,48 @@
 .main{
-    margin-top: -4%;
-    width: 100vw;
-    padding: 0px;
-    height: 80vh;
+    min-width: 40px;
+    height: 60px;
+    width: auto;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.DetailMain{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: rgb(150, 21, 64);
+    transition: all 500ms ease-in-out;
+    background-color: var(--mainColor);
+}
+
+.texthere{
+    display: flex;
+    padding: 10px 20px;
+    height: 100%;
+    align-items: center;
+    transition: all 500ms ease-in-out;
+    background-color: var(--mainBoldColor);
+    justify-content: center;
+}
+
+.texthere p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main:hover .DetailMain{
+    background-color: var(--mainBoldColor);
+}
+
+.main:hover .texthere{
+    background-color: var(--mainColor);
 }

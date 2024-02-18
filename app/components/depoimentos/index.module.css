@@ -8,5 +8,24 @@
     flex-direction: column;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
     justify-content: center;
-    background-color: rgb(172, 109, 166);
+    background: rgb(5,144,214);
+    background: linear-gradient(90deg, rgba(5,144,214,1) 23%, rgba(23,103,179,1) 56%);
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+
+    .main{
+        margin-top: -40px;
+        width: 100vw;
+        padding: 0px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        justify-content: center;
+        background: rgb(5,144,214);
+        background: linear-gradient(90deg, rgba(5,144,214,1) 23%, rgba(23,103,179,1) 56%);
+    }
+
 }

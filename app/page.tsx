@@ -6,6 +6,7 @@ import MainBanner from "./components/homeBanner";
 import Empreendimentos from "./components/carrouselEmpreendimentos";
 import QuemSomos from "./components/quemSomos";
 import HomeForm from "./components/homeForm";
+import Depoimentos from "./components/depoimentos";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <MainBanner />
         <Empreendimentos />
         <QuemSomos />
+        <Depoimentos />
         <HomeForm />
       </main>
       <Footer/>
