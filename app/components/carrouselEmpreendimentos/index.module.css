@@ -1,6 +1,6 @@
 .main{
     margin-top: -4%;
-    width: 100vw;
+    width: 100%;
     padding: 0px;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     overflow: hidden;
     width: 280px;
     height: 530px;
-
+    max-width: 280px;
     margin-bottom: 60px;
     margin-top: 60px ;
     display: flex;
@@ -67,6 +67,7 @@
 
 .swiperModal{
     display: flex;
+    width: 100%;
     align-items: center;
     height: 100%;
     justify-content: center;
@@ -191,7 +192,7 @@
     flex-direction: column;
 }
 
-.swiper-slide .carrouselEmpreendimentos{
+.carrouselEmpreendimentos{
     margin-top: 300px;
 }
 
@@ -203,13 +204,24 @@
         margin-top: -40px;
         width: 100vw;
         padding: 0px;
-        height: 80vh;
+        height: 1000px;
         display: flex;
         align-items: center;
         flex-direction: column;
         clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
         justify-content: center;
     }
+
+    .mainContainer{
+        width: 100%;
+        max-width: 1400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
 
     .mainContainer h2{
         margin-top: 120px;

@@ -12,6 +12,25 @@ import { url } from "inspector";
 
 export default function Empreendimentos() {
 
+  const [larguraDaJanela, setLarguraDaJanela] = useState<number>(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setLarguraDaJanela(window.innerWidth);
+    };
+
+    // Captura a largura da janela quando o componente é montado
+    handleResize();
+
+    // Adiciona um ouvinte de redimensionamento para atualizar a largura da janela quando ela muda
+    window.addEventListener('resize', handleResize);
+
+    // Remove o ouvinte de redimensionamento quando o componente é desmontado
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const projetosImobiliarios = [
     {
       type: "Edifício",
@@ -52,7 +71,7 @@ export default function Empreendimentos() {
 
 
   const fotosSwiperSlides = projetosImobiliarios.map((data, index) => (
-    <SwiperSlide key={index} className={styles.SlideMain} style={{height: activeSlide === index ? '520px' : '250px', marginTop: activeSlide === index ? '520px' : '650px',}}>
+    <SwiperSlide key={index} className={styles.SlideMain} style={{height: activeSlide === index ? '520px' : '250px'}}>
         <div className={styles.cardCarrousel}>
           <Link href={"/"}>
             <div className={styles.mainImageHere} style={{backgroundImage: `url(${data?.img})`}}>
@@ -90,14 +109,14 @@ export default function Empreendimentos() {
         </div>
     </SwiperSlide>
   ));
-
+    console.log(larguraDaJanela)
   return (
     <section className={styles.main}>
       <div className={styles.mainContainer}>
         <h2>Seu futuro <strong>te <span>espera:</span></strong></h2>
         <p className={styles.titleDescription}>Conheça unidades disponíveis para <strong>venda</strong> e <strong>locação.</strong></p>
         <Swiper
-          spaceBetween={20}
+          spaceBetween={0}
           slidesPerView={"auto"}
           initialSlide={1}
           centeredSlides={true}
