@@ -123,7 +123,7 @@
 
 
 .hambmenuContainer:hover span{
-    background-color: var(--mainColor);
+    opacity: 0.8;
 }
 
 .hambmenuContainer:hover span:nth-child(2){
