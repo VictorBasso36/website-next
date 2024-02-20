@@ -71,8 +71,12 @@
 .mainTitle p:nth-child(1){
     margin-top: -60px;
 }
+.mainDescription{
+    font-size: 15px;
+}
 
 .mainDescription strong{
+    font-size: 18px;
     text-decoration: underline red;
 }
 
