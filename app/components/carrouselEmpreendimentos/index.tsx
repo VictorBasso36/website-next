@@ -34,9 +34,20 @@ export default function Empreendimentos() {
   const projetosImobiliarios = [
     {
       type: "Edifício",
+      slug: "Kyros",
+      titulo: "Kyros",
+      size: "47m²",
+      vagas: "3 Vaga",
+      imovel: "Prédio",
+      contrato: "Locação",
+      img: "https://3d1.com.br/assets/imagens/galerias/d134_fachada-predio-edificio-fatima-henrique-lado-maquete-3d.jpg",
+      endereco: "Rua Lauro Muller, 335 - Sto. André"
+    },
+    {
+      type: "Edifício",
       slug: "Vivre-Résidence",
       titulo: "Vivre Résidence",
-      size: "47m²",
+      size: "72m²",
       vagas: "1 Vaga",
       imovel: "Prédio",
       contrato: "Locação",
@@ -45,25 +56,14 @@ export default function Empreendimentos() {
     },
     {
       type: "Edifício",
-      slug: "Vivre-Résidence",
-      titulo: "Vivre Résidence",
-      size: "47m²",
-      vagas: "1 Vaga",
+      slug: "Vila-Sul",
+      titulo: "Vila Sul",
+      size: "56m²",
+      vagas: "6 Vaga",
       imovel: "Prédio",
       contrato: "Locação",
-      img: "https://media.istockphoto.com/id/1411304340/pt/foto/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=612x612&w=0&k=20&c=qsYibygh6TlP__O9_6pnUPyXuA9rZ5Tiz6kggV6BxCE=",
-      endereco: "Rua Lauro Muller, 335 - Sto. André"
-    },
-    {
-      type: "Edifício",
-      slug: "Vivre-Résidence",
-      titulo: "Vivre Résidence",
-      size: "47m²",
-      vagas: "1 Vaga",
-      imovel: "Prédio",
-      contrato: "Locação",
-      img: "https://media.istockphoto.com/id/1411304340/pt/foto/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=612x612&w=0&k=20&c=qsYibygh6TlP__O9_6pnUPyXuA9rZ5Tiz6kggV6BxCE=",
-      endereco: "Rua Lauro Muller, 335 - Sto. André"
+      img: "https://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpg",
+      endereco: "Rua Muller, 335 - Sto. André"
     }
   ];
 
