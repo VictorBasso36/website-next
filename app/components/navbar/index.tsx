@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { useOpen } from '../../providers/modalProvider'
 
 export default function Navbar() {
     const [menu, setMenu] = useState(false);
@@ -15,9 +16,12 @@ export default function Navbar() {
       }
     }, [menu]);
     const pathname = usePathname()
-
+    const { setOpen } = useOpen() 
   return (
     <>
+      <div className={styles.whatsappButton} onClick={() => setOpen('whatsapp')} >                 
+        <Image src="/whatsapp.svg" width={25} height={25} alt='Whatsapp de contato para imobiliária - VilaSul. '></Image>               
+      </div>
         { menu && 
             <div className={styles.mainMenuHere} onClick={() => setMenu(!menu)}>
                 <div className={styles.ModalHere}>

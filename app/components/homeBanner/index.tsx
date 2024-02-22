@@ -10,7 +10,7 @@ export default function MainBanner() {
         <div className={styles.mainContainer}>
             <h1>Há mais de <strong>35 anos</strong><br />
             <span>concretizando sonhos</span></h1>
-            <ButtonMain textstring="Quero realizar meu sonho!" url="/"  />
+            <ButtonMain textstring="Quero realizar meu sonho!"  />
             <a href="/">
               <p className={styles.TelBanner}><strong>Telefone </strong><span>&nbsp;(11) 4994-0522</span></p>
             </a>
