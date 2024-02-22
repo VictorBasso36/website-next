@@ -16,7 +16,7 @@ export default function HomeForm() {
             <input type="text" placeholder="Nome" /> <input type="text" placeholder="Whatsapp" />
           </div>
           <input className={styles.inputemail} type="email" placeholder="Email" />
-          <ButtonMain textstring="Enviar meu contato" url="/"  />
+          <ButtonMain textstring="Enviar meu contato"  />
         </form>
       </div>
     </section>

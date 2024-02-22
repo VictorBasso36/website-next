@@ -3,8 +3,10 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import Link from "next/link";
 
+
 export default function Footer() {
   return (
+    <>
     <footer className={styles.main}>
         <div className={styles.mainContainer}>
             <ul>
@@ -69,5 +71,6 @@ export default function Footer() {
         <br />
         <br />
     </footer>
+    </>
   );
 }

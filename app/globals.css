@@ -135,3 +135,27 @@ p {
 }
 
 
+
+
+.whatsappButton {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  bottom: 0px;
+  z-index: 9999;
+  right: 0px;
+  color: #4dc77b;
+  font-weight: bolder;
+  font-size: 16pt;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: white!important;
+  margin-top: -150px!important;
+  height: 40px!important;
+  width: 40px!important;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-size: 30px!important;
+}

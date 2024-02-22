@@ -63,7 +63,7 @@
         flex-direction: column;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
         justify-content: center;
-        background-image: url('/whitehome_15650568.jpg.png');
+        background-image: unset;
         background-position: bottom;
         position: relative;
     }

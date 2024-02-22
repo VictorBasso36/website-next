@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { OpenProvider } from './providers/providers'
 const inter = Inter({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900', ], variable: '--Inter' }, );
 
 export const metadata: Metadata = {
@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <OpenProvider key={0}>
+        <body className={inter.className}>{children}</body>
+      </OpenProvider>
     </html>
   );
 }

@@ -17,7 +17,7 @@ export default function QuemSomos() {
           Nossa missão?<br />
           <strong>Ser a trilha que leva você à casa dos sonhos.</strong> 
         </p>
-        <ButtonMain textstring="Conheça o VillaSul" url="/"  />
+        <ButtonMain textstring="Conheça o VillaSul"   />
 
       </div>
     </section>

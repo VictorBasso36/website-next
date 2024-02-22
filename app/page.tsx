@@ -8,8 +8,10 @@ import QuemSomos from "./components/quemSomos";
 import HomeForm from "./components/homeForm";
 import Depoimentos from "./components/depoimentos";
 import { url } from "inspector";
+import ModalLead from "./components/modalLead";
 
 export default function Home() {
+
   return (
     <>
       <Navbar />
@@ -23,6 +25,7 @@ export default function Home() {
         <div className={styles.quemSomosImage} style={{backgroundImage: 'url("/responsivoForms.png")' }} ></div>
       </main>
       <Footer/>
+      <ModalLead />
     </>
   );
 }

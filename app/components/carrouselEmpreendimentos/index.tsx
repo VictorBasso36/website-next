@@ -6,7 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import { Autoplay, Pagination, Virtual } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Autoplay, Navigation, Pagination, Virtual } from 'swiper/modules';
 import { useEffect, useState } from "react";
 import { url } from "inspector";
 
@@ -71,7 +72,7 @@ export default function Empreendimentos() {
 
 
   const fotosSwiperSlides = projetosImobiliarios.map((data, index) => (
-    <SwiperSlide key={index} className={styles.SlideMain} style={{height: activeSlide === index ? '520px' : '250px'}}>
+    <SwiperSlide key={index} className={styles.SlideMain} style={{height: activeSlide === index ? '520px' : '720px',  backgroundColor:  activeSlide === index ? '' : 'transparent'}}>
         <div className={styles.cardCarrousel}>
           <Link href={"/"}>
             <div className={styles.mainImageHere} style={{backgroundImage: `url(${data?.img})`}}>
@@ -79,7 +80,7 @@ export default function Empreendimentos() {
             </div>
           </Link>
           {/* se esse for o slide active definir height do DetailCascate como 0.1px */}
-          <div className={styles.DetailCascate} style={{height: activeSlide === index ? '250px' : '0px'}}>
+          <div className={styles.DetailCascate} style={{height: activeSlide === index ? '250px' : '0px', opacity: activeSlide === index ? 1 : 0 }}>
             <div className={styles.DetailsHere}>
                 <div className={styles.IconHere}>
                   <div className={styles.divIcon}>
@@ -122,8 +123,9 @@ export default function Empreendimentos() {
           centeredSlides={true}
           loop={false}
           grabCursor={true}
-          modules={[Autoplay, Virtual, Pagination]}
+          modules={[Autoplay, Virtual, Pagination, Navigation]}
           pagination={false}
+          navigation={true}
           autoplay={false}
           onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
           className={styles.swiperModal}
