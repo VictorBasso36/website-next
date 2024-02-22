@@ -1,6 +1,6 @@
 "use client"
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
-import { useSearchParams } from 'next/navigation'
+// import { useSearchParams } from 'next/navigation'
 
 interface OpenProviderProps {
   children: ReactNode;
@@ -17,10 +17,10 @@ const OpenContext = createContext<OpenContextType>({
 })
 
 export function OpenProvider({ children }: OpenProviderProps) {
-    const searchParams = useSearchParams()
-    const search = searchParams.get('open') || ''
+    // const searchParams = useSearchParams()
+    // const search = searchParams.get('open') || ''
   
-    const [open, setOpen] = useState<string>(search)
+    const [open, setOpen] = useState<string>('')
 
     return (
         <OpenContext.Provider 
