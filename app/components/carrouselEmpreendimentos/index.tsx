@@ -74,7 +74,7 @@ export default function Empreendimentos() {
   const fotosSwiperSlides = projetosImobiliarios.map((data, index) => (
     <SwiperSlide key={index} className={styles.SlideMain} style={{height: activeSlide === index ? '520px' : '720px',  backgroundColor:  activeSlide === index ? '' : 'transparent'}}>
         <div className={styles.cardCarrousel}>
-          <Link href={"/"}>
+          <Link href={`/Empreendimento/${data?.slug}`} title={`Conheça o empreedimento imobilíario da VilaSul: ${data?.type} ${data?.titulo}`}>
             <div className={styles.mainImageHere} style={{backgroundImage: `url(${data?.img})`}}>
               <p>{data?.type} <strong>{data?.titulo}</strong></p>
             </div>
@@ -100,7 +100,7 @@ export default function Empreendimentos() {
             <div className={styles.borderDetail}></div>
             <p className={styles.contrato}><strong>{data?.contrato}</strong></p>
             <div className={styles.buttonHere}>
-              <Link href="/">
+              <Link href={`/Empreendimento/${data?.slug}`} title={`Conheça o empreedimento imobilíario da VilaSul: ${data?.type} ${data?.titulo}`}>
                 <button className={styles.mainButton}>
                   <p><strong>Eu quero!</strong></p>
                 </button>
