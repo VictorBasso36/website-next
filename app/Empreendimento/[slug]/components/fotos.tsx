@@ -6,7 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import { Autoplay, Pagination, Virtual } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Virtual, Navigation } from 'swiper/modules';
 import { useEffect, useState } from "react";
 
 interface Foto {
@@ -21,8 +22,7 @@ export default function Fotos({data}: FotosProps) {
   if(data.length < 0) return null
   const fotosSwiperSlides = data?.map((data, index) => (
     <SwiperSlide key={index} className={styles.SlideMain}>
-      {data?.url}
-      {/* <Image src={data?.url || ''} alt={data?.description || ''} width={1000} height={600}></Image> */}
+      <img src={data?.url || ''} alt={data?.description || ''} ></img>
     </SwiperSlide>
   ));
 
@@ -44,7 +44,8 @@ export default function Fotos({data}: FotosProps) {
           centeredSlides={true}
           loop={false}
           grabCursor={true}
-          modules={[Autoplay, Virtual, Pagination]}
+          modules={[Autoplay, Virtual, Pagination, Navigation]}
+          navigation={true}
           pagination={pagination}
           autoplay={false}
           className={styles.swiperModal}
