@@ -23,7 +23,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
                 },
                 {
                     description: "Imagem Vila Sul",
-                    url: "https://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpghttps://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpg"
+                    url: "https://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpg"
                 },
                 {
                     description: "Imagem Vila Sul",
@@ -81,7 +81,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
                 },
                 {
                     description: "Imagem Vila Sul",
-                    url: "https://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpghttps://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpg"
+                    url: "https://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpg"
                 },
                 {
                     description: "Imagem Vila Sul",
@@ -138,7 +138,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
                 },
                 {
                     description: "Imagem Vila Sul",
-                    url: "https://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpghttps://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpg"
+                    url: "https://img.freepik.com/fotos-gratis/foto-de-um-predio-alto-e-alto_181624-2214.jpg"
                 },
                 {
                     description: "Imagem Vila Sul",

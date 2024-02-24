@@ -21,7 +21,8 @@ export default function Fotos({data}: FotosProps) {
   if(data.length < 0) return null
   const fotosSwiperSlides = data?.map((data, index) => (
     <SwiperSlide key={index} className={styles.SlideMain}>
-      <Image src={data?.url || ''} alt={data?.url || ''}></Image>
+      {data?.url}
+      {/* <Image src={data?.url || ''} alt={data?.description || ''} width={1000} height={600}></Image> */}
     </SwiperSlide>
   ));
 
