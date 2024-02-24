@@ -1,14 +1,99 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../../globals.css";
+import '../../../app/globals.css';
 import { OpenProvider } from '../../providers/modalProvider'
 const inter = Inter({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900', ], variable: '--Inter' }, );
 
-export const metadata: Metadata = {
-  title: "Vila Sul - Empreendimento",
-  description: "Empreendimentos Imobiliários",
-  icons: "/villasulmainlogo.svg"
-};
+
+interface Foto {
+  description?: string;
+  url?: string;
+}
+
+interface Progresso {
+  name?: string;
+  percent?: string;
+}
+
+export interface PropsGet {
+  type?: string;
+  slug?: string;
+  titulo?: string;
+  size?: string;
+  vagas?: string;
+  imovel?: string;
+  quartos?: number;
+  contrato?: string;
+  img?: string;
+  description?: string;
+  endereco?: string;
+  enderecoMaps?: string;
+  fotos?: Foto[];
+  progresso?: Progresso[];
+}
+
+// export async function generateStaticParams() {
+//   const request = await fetch('http://localhost:3000/api/Empreendimentos');
+//   const posts: PropsGet[] = await request.json();
+
+//   if (!posts) return {};
+
+//   return posts.map((post: PropsGet) => ({
+//     type: post?.type,
+//     slug: post?.slug,
+//     titulo: post?.titulo,
+//     size: post?.size,
+//     vagas: post?.vagas,
+//     imovel: post?.imovel,
+//     quartos: post?.quartos,
+//     contrato: post?.contrato,
+//     img: post?.img,
+//     description: post?.description,
+//     endereco: post?.endereco,
+//     enderecoMaps: post?.enderecoMaps,
+//     fotos: [post?.fotos?.map((data) => {
+//         data?.description,
+//         data?.url
+//     })],
+//     progresso: [post?.progresso?.map((data) => {
+//       data?.name,
+//       data?.percent
+//     })]
+//   }))
+// }
+
+// export async function generateMetadata({ params }: any): Promise<Metadata> { 
+
+//   const slugMetadata = (await fetch('http://localhost:3000/api/Empreendimentos')).json() 
+//   if(!slugMetadata) return {}
+//   const data = await slugMetadata
+
+//   const slug = decodeURIComponent(params?.slug)
+//   const content = data.find((objeto: any) => objeto.slug === slug.toString());
+//   return {
+//     title: content?.slug ? `Empreendimento Imobiliário : ${content?.slug}` : 'VilaSul - Empreendimentos Imobiliários',
+//     description: content?.description  ? content?.description : 'VilaSul - Empreendimentos Imobiliários',
+//     metadataBase: new URL('https://vilasul.vercel.app/'),
+//     robots: {
+//       index: true,
+//       googleBot: 'index, follow',
+//     },
+    
+//     authors: [{
+//       name: 'Guilherme Luziac',
+//       url: 'https://www.linkedin.com/in/guilherme-carvalho-bispo/?originalSubdomain=br'
+//     },
+//     {
+//       name: 'Victor Basso Dev',
+//       url: 'www.linkedin.com/in/victor-basso-b3090a189'
+//     }  
+//     ],
+//     icons: {
+//       icon: '/faviicon.svg',
+//     },
+//   }
+// }
+
 
 export default function RootLayout({
   children,
@@ -16,10 +101,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+
       <OpenProvider key={0}>
-        <body className={inter.className}>{children}</body>
+        {children}
       </OpenProvider>
-    </html>
+
   );
 }
