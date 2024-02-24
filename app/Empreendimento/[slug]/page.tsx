@@ -37,23 +37,23 @@ export interface PropsGet {
   fotos?: Foto[];
   progresso?: Progresso[];
 }
-// async function getData(): Promise<PropsGet[]> {
-//   const slugMetadata = await (await fetch('http://localhost:3000/api/Empreendimentos')).json();
-//   if(!slugMetadata) return []
-//   const data: PropsGet[] = slugMetadata;
-//   return data;
-// }
+async function getData(): Promise<PropsGet[]> {
+  const slugMetadata = await (await fetch('https://vilasul.vercel.app/api/Empreendimentos')).json();
+  if(!slugMetadata) return []
+  const data: PropsGet[] = slugMetadata;
+  return data;
+}
 
 
 export default function Empreendimento({ params }: { params: { slug: string } }) {
   const [finalData, setFinalData] = useState<PropsGet[]>([]);
   const search = decodeURIComponent(params.slug || `&quot;`);
 
-  // useEffect(() => {
-  //   getData().then((data) => {
-  //     setFinalData(data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    getData().then((data) => {
+      setFinalData(data);
+    });
+  }, []);
 
   const content = finalData.find((objeto: any) => objeto.slug === search.toString());
   return (
