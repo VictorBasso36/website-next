@@ -21,7 +21,7 @@ export default function Status({data}: StatusProps) {
           <ul>
             {data.map((item, index) => (
 
-              <li><div className={styles.bgHere}
+              <li key={index}><div className={styles.bgHere}
               style={{
                 background: `linear-gradient(90deg, rgba(255,255,255,1)  ${item?.percent}, rgba(137,175,212,0.4) ${item?.percent})`
               }}
