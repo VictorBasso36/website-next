@@ -63,23 +63,31 @@ export default function Empreendimento({ params }: { params: { slug: string } })
     <>
       
       <Navbar />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br /><br /><br />
       <main className={styles.main}>
-        {content?.titulo}
-        {params?.slug.toString()}
-        <div className={styles.mainBgTitle}>
-          <div className={styles.mainContainer}>
-            <h1>{content?.slug}<strong>{content?.titulo}</strong></h1>
+        <div className={styles.gradientHereMain}>
+          <div className={styles.mainBgTitle}>
+            <div className={styles.mainContainer}>
+              <h1>{content?.type} <strong>{content?.titulo}</strong></h1>
+            </div>
           </div>
-        </div>
-        <div className={styles.maininfo}>
-          <div className={styles.mainInfoContainer}>
-
+          <div className={styles.maininfo}>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div className={styles.mainInfoContainer}>
+              {content?.endereco}
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
         </div>
 
