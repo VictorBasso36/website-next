@@ -121,6 +121,7 @@ export default function Empreendimentos() {
           slidesPerView={"auto"}
           initialSlide={1}
           centeredSlides={true}
+          slideToClickedSlide={true}
           loop={false}
           grabCursor={true}
           modules={[Autoplay, Virtual, Pagination, Navigation]}
