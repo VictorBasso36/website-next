@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import styles from "../../page.module.css";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import MainBanner from "../../components/homeBanner";
@@ -11,6 +10,9 @@ import Depoimentos from "../../components/depoimentos";
 import { url } from "inspector";
 import ModalLead from "../../components/modalLead";
 import { useEffect, useState } from "react";
+import Status from "./components/status";
+import Fotos from "./components/fotos";
+import styles from "./page.module.css"
 interface Foto {
   description?: string;
   url?: string;
@@ -56,6 +58,7 @@ export default function Empreendimento({ params }: { params: { slug: string } })
   }, []);
 
   const content = finalData.find((objeto: any) => objeto.slug === search.toString());
+  console.log(content?.enderecoMaps)
   return (
     <>
       
@@ -69,8 +72,34 @@ export default function Empreendimento({ params }: { params: { slug: string } })
       <main className={styles.main}>
         {content?.titulo}
         {params?.slug.toString()}
-        <br /><br /><br /><br /><br /><br />
-        <Empreendimentos />
+        <div className={styles.mainBgTitle}>
+          <div className={styles.mainContainer}>
+            <h1>{content?.slug}<strong>{content?.titulo}</strong></h1>
+          </div>
+        </div>
+        <div className={styles.maininfo}>
+          <div className={styles.mainInfoContainer}>
+
+          </div>
+        </div>
+
+        {
+          content?.enderecoMaps &&
+          <iframe className={styles.mainIframe} src={content?.enderecoMaps} width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy={"no-referrer-when-downgrade"}></iframe>
+        }
+        <div className={styles.gradientHere}>
+          {
+            content?.fotos && <Fotos data={content?.fotos} />
+          }
+          {
+            content?.progresso && <Status data={content?.progresso} key={1}/>
+          }
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
         <HomeForm />
       </main>
       <Footer/>

@@ -1,0 +1,40 @@
+.main{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    width: 90%;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainContainer h2{
+    color: white;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 30pt;
+}
+
+@media screen and (min-width: 280px) and (max-width: 550px){
+    .mainContainer{
+        width: 95%;
+        max-width: 1400px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mainContainer h2{
+        color: white;
+        font-weight: normal;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 20pt;
+    } 
+}
