@@ -65,7 +65,7 @@ export default function Navbar() {
         }
         <nav className={styles.main}>
             <div className={styles.containerNav}>
-                <Link href="/">
+                <Link href="/" title="Conheça o Vila Sul Empreendimentos - Melhores Imovéis para investir !">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
