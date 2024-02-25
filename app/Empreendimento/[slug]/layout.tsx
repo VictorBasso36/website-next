@@ -22,6 +22,7 @@ export interface PropsGet {
   size?: string;
   vagas?: string;
   imovel?: string;
+  simpleName?: number;
   quartos?: number;
   contrato?: string;
   img?: string;
