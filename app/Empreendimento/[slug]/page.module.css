@@ -112,7 +112,8 @@
 }
 
 .borderDetail{
-    width: 60%;
+    width: 40%;
+    min-width: 240px;
     height: 2px;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -146,6 +147,30 @@
     border-radius: 30px;
 }
 
+.infoIconsHere{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.infoIconsHere p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.infoIconsHere p img{
+    height: 15px;
+    width: auto;
+    margin-bottom: 5px;
+}
 
 @media screen and (min-width: 0px) and (max-width: 1024px) {
     .mainBgTitle{
@@ -178,3 +203,191 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+
+    .mainBgTitle h1{
+        font-weight: normal;
+        width: 100%;
+        text-align: center;
+        color: var( --textBlackColor);
+        font-size: 25px;
+    }
+
+    .mainBgTitle h1 strong{
+        font-size: 35pt;
+        background: rgb(5,144,214);
+        background-clip: text;
+        background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .maininfoContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        max-width: 1400px;
+    }    
+
+    .cardInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .mainImage{
+        margin-top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        border-radius: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 850px) {
+
+    .mainBgTitle h1{
+        font-weight: normal;
+        width: 100%;
+        text-align: center;
+        color: var( --textBlackColor);
+        font-size: 25px;
+    }
+
+    .mainBgTitle h1 strong{
+        font-size: 35pt;
+        background: rgb(5,144,214);
+        background-clip: text;
+        background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .maininfoContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        max-width: 1400px;
+    }    
+
+    .cardInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .mainImage{
+        margin-top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        border-radius: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+
+    .mainBgTitle h1{
+        font-weight: normal;
+        width: 100%;
+        text-align: center;
+        color: var( --textBlackColor);
+        font-size: 20px;
+    }
+
+    .mainBgTitle h1 strong{
+        font-size: 25pt;
+        background: rgb(5,144,214);
+        background-clip: text;
+        background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .maininfoContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        max-width: 1400px;
+    }    
+
+    .cardInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .mainImage{
+        margin-top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        border-radius: 30px;
+        margin-bottom: 50px;
+    }
+
+    .description{
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 14pt;
+    }
+
+    .TextHere pre{
+        padding: 20px;
+        font-size: 15pt;
+        text-align: justify;
+        word-wrap: break-word;
+        font-family: var(--Inter);
+        white-space: break-spaces;
+    }
+    
+    .TextHere pre p{
+        text-align: justify;
+        word-wrap: break-word;
+        color: white;
+        font-family: var(--Inter);
+        white-space: break-spaces;
+    }
+
+    .infoIconsHere p img{
+        height: 15px;
+        width: auto;
+        margin: 15px;
+        margin-bottom: unset;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px){
+    .quemSomosImage{
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+    }
+  }

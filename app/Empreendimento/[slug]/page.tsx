@@ -80,7 +80,7 @@ export default function Empreendimento({ params }: { params: { slug: string } })
                     {content?.size && <><p><Image src="/size.svg" width={20} height={15} alt="Tamanho dos imoveis da Vila Sul"></Image>{`${content?.size}`}</p></>}
                     {content?.vagas && <><p><Image src="/vagas.svg" width={20} height={15} alt="Numero de vagas dos imoveis da Vila Sul"></Image>{`${content?.vagas}`}</p></>}
                     {content?.imovel && <><p><Image src="/imovel.svg" width={20} height={15} alt="Tipo de imoveis da Vila Sul"></Image>{`${content?.imovel}`}</p></>}
-                    {content?.quartos && <><p><Image src="/rooms.svg" width={20} height={15} alt="quantidade de quartos imoveis da Vila Sul"></Image>{`${content?.quartos}`}</p></>}
+                    {content?.quartos && <><p><Image src="/rooms.svg" width={20} height={15} alt="quantidade de quartos imoveis da Vila Sul"></Image>{`${content?.quartos} quarto(s)`}</p></>}
                     {content?.simpleName && <><p><Image src="/location.svg" width={20} height={15} alt="Localização dos imoveis da Vila Sul"></Image>{`${content?.simpleName}`}</p></>}
                   </div>
                   <div className={styles.borderDetail}></div>
@@ -90,7 +90,6 @@ export default function Empreendimento({ params }: { params: { slug: string } })
                   
                     </pre>
                   </div>
-                  <br /><br />
                 </div>
                 <ButtonMain textstring="Conheça o Empreendimento"  />
               </div>
@@ -118,6 +117,7 @@ export default function Empreendimento({ params }: { params: { slug: string } })
           <br />
         </div>
         <HomeForm />
+        <div className={styles.quemSomosImage} style={{backgroundImage: 'url("/responsivoForms.png")' }} ></div>
       </main>
       <Footer/>
       <ModalLead />
