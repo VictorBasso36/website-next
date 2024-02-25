@@ -29,7 +29,7 @@ export default function Status({data}: StatusProps) {
             
             ))}
           </ul>
-          <img src="/statusBuild.svg" alt="" width={450} height={450} />
+          <Image src="/statusBuild.svg" alt="" width={450} height={450} />
         </div>
       </div>
     </section>
