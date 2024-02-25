@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import Status from "./components/status";
 import Fotos from "./components/fotos";
 import styles from "./page.module.css"
+import ButtonMain from "@/app/components/buttonMain";
 interface Foto {
   description?: string;
   url?: string;
@@ -85,7 +86,7 @@ export default function Empreendimento({ params }: { params: { slug: string } })
                     </pre>
                   </div>
                 </div>
-                <button></button>
+                <ButtonMain textstring="Conheça o Empreendimento"  />
               </div>
               {content?.fotos &&
               <img src="/foto-de-um-predio-alto-e-alto_181624-2214.avif" alt={content?.fotos[0]?.description ? content?.fotos[0]?.description : ''} />}
