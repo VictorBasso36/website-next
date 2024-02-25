@@ -22,7 +22,7 @@ export default function Fotos({data}: FotosProps) {
   if(data.length < 0) return null
   const fotosSwiperSlides = data?.map((data, index) => (
     <SwiperSlide key={index} className={styles.SlideMain}>
-      <img src={data?.url || ''} alt={data?.description || ''} ></img>
+      <Image src={data?.url || ''} alt={data?.description || ''} width={1200} height={700} ></Image>
     </SwiperSlide>
   ));
 
@@ -45,7 +45,7 @@ export default function Fotos({data}: FotosProps) {
           loop={false}
           grabCursor={true}
           modules={[Autoplay, Virtual, Pagination, Navigation]}
-          navigation={true}
+          navigation={false}
           pagination={pagination}
           autoplay={false}
           className={styles.swiperModal}

@@ -67,27 +67,29 @@ export default function Empreendimento({ params }: { params: { slug: string } })
         <div className={styles.gradientHereMain}>
           <div className={styles.mainBgTitle}>
             <div className={styles.mainContainer}>
-              <h1>{content?.type} <strong>{content?.titulo}</strong></h1>
+              <h1>{content?.type} <br /><strong>{content?.titulo}:</strong></h1>
             </div>
           </div>
           <div className={styles.maininfo}>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div className={styles.mainInfoContainer}>
-              {content?.endereco}
+            <div className={styles.maininfoContainer}>
+              <div className={styles.cardInfo}>
+                <div className={styles.infosCardHere}>
+                  <div className={styles.infoIconsHere}>
+
+                  </div>
+                  <div className={styles.DetailHere}></div>
+                  <div className={styles.TextHere}>
+                    <p><strong>{content?.endereco}</strong></p>
+                    <pre className={styles.textContent} dangerouslySetInnerHTML={{ __html: content?.description || '' }}>
+                  
+                    </pre>
+                  </div>
+                </div>
+                <button></button>
+              </div>
+              {content?.fotos &&
+              <img src="/foto-de-um-predio-alto-e-alto_181624-2214.avif" alt={content?.fotos[0]?.description ? content?.fotos[0]?.description : ''} />}
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
           </div>
         </div>
 
