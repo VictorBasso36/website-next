@@ -30,9 +30,9 @@
 }
 
 .mainBgTitle{
-    background-color: rgb(179, 102, 102);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,56 @@
     flex-direction: column;
 }
 
+.mainBgTitle h1{
+    font-weight: normal;
+    width: 100%;
+    text-align: left;
+    color: var( --textBlackColor);
+}
+
+.mainBgTitle h1 strong{
+    font-size: 30pt;
+    background: rgb(5,144,214);
+    background-clip: text;
+    background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .mainContainer{
     width: 90%;
     max-width: 1400px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .mainBgTitle{
+        background-color: rgb(255, 255, 255);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        overflow: hidden;
+        flex-direction: column;
+    }
+    
+    .mainBgTitle h1{
+        font-weight: normal;
+        width: 100%;
+        text-align: left;
+        color: var( --textBlackColor);
+        font-size: 18px;
+    }
+
+    
+    .mainBgTitle h1 strong{
+        font-size: 22pt;
+        background: rgb(5,144,214);
+        background-clip: text;
+        background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
