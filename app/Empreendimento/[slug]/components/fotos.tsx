@@ -22,7 +22,7 @@ export default function Fotos({data}: FotosProps) {
   if(data.length < 0) return null
   const fotosSwiperSlides = data?.map((data, index) => (
     <SwiperSlide key={index} className={styles.SlideMain}>
-      <Image src={data?.url || ''} alt={data?.description || ''} width={1200} height={700} ></Image>
+      <Image className={styles.shadown} src={data?.url || ''} alt={data?.description || ''} width={1200} height={700} ></Image>
     </SwiperSlide>
   ));
 
@@ -38,20 +38,27 @@ export default function Fotos({data}: FotosProps) {
       <div className={styles.mainContainer}>
         <h2>Fotos do <strong>Empreendimento:</strong></h2>
         <Swiper
-          spaceBetween={20}
+          spaceBetween={0}
           slidesPerView={"auto"}
           initialSlide={1}
           centeredSlides={true}
           loop={false}
           grabCursor={true}
           modules={[Autoplay, Virtual, Pagination, Navigation]}
-          navigation={false}
           pagination={pagination}
           autoplay={false}
+          navigation={{
+            enabled: true,
+            nextEl: '.my-custom-next-button',
+            prevEl: '.my-custom-prev-button',
+          }}
           className={styles.swiperModal}
         >
           {fotosSwiperSlides}
         </Swiper>
+        <Image className="my-custom-prev-button" alt="Veja as imagens !" src="/arrow.svg" width={20} height={20}></Image>
+        <Image className="my-custom-next-button" alt="Veja as imagens !" src="/arrow.svg" width={20} height={20}></Image>
+   
       </div>
     </section>
   );
