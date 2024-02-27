@@ -48,6 +48,10 @@
     color: var( --textBlackColor);
 }
 
+.mainBgTitle h1 br{
+    display: none;
+}
+
 .mainBgTitle h1 strong{
     font-size: 30pt;
     background: rgb(5,144,214);
@@ -254,7 +258,9 @@
 }
 
 @media screen and (min-width: 550px) and (max-width: 850px) {
-
+    .mainBgTitle h1 br{
+        display: none;
+    }
     .mainBgTitle h1{
         font-weight: normal;
         width: 100%;
@@ -302,6 +308,9 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 550px) {
+    .mainBgTitle h1 br{
+        display: none;
+    }
 
     .mainBgTitle h1{
         font-weight: normal;

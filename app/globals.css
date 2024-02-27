@@ -116,6 +116,7 @@ p {
 
 .swiper-slide{
   transform: scale(0.6)!important;
+  
   transition: all 500ms ease-in-out;
 }
 
@@ -158,4 +159,31 @@ p {
 
 .swiper-button-prev:after, .swiper-button-next:after{
   font-size: 30px!important;
+}
+
+
+
+
+
+
+.my-custom-next-button{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  margin-right: 20px;
+  z-index: 9;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.my-custom-prev-button{
+  position: absolute;
+  margin-left: 20px;
+  cursor: pointer;
+  left: 0;
+  z-index: 9;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 50%;
+  transform: rotate(180deg) translateY(-50%);
 }

@@ -1,7 +1,7 @@
 .main{
     width: 100vw;
     padding: 0px;
-    height: 80vh;
+    height: 650px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -52,18 +52,29 @@
     font-weight: bold;
 }
 
+.mainImageResponsive{
+    display: none;
+    margin-top: 40px;
+}
+
 
 @media screen and (min-width: 0px) and (max-width: 1024px) {
+    .mainImageResponsive{
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+
     .main{
         width: 100vw;
         padding: 0px;
-        height: 1200px;
+        height: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
         justify-content: center;
-        background-image: url('/mainBannerBGresponsive.png');
+        background-image: unset;
         background-position: bottom;
         background-position-y: 400px ;
         position: relative;
@@ -113,13 +124,13 @@
     .main{
         width: 100vw;
         padding: 0px;
-        height: 1200px;
+        height: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
         justify-content: center;
-        background-image: url('/mainBannerBGresponsive.png');
+        background-image: unset;
         background-position: bottom;
         background-position-y: 430px ;
         position: relative;

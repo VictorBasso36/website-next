@@ -72,7 +72,7 @@ export default function Empreendimentos() {
 
 
   const fotosSwiperSlides = projetosImobiliarios.map((data, index) => (
-    <SwiperSlide key={index} className={styles.SlideMain} style={{height: activeSlide === index ? '520px' : '720px',  backgroundColor:  activeSlide === index ? '' : 'transparent'}}>
+    <SwiperSlide key={index} className={styles.SlideMain} style={{height: activeSlide === index ? '540px' : '740px',  backgroundColor:  activeSlide === index ? '' : 'transparent'}}>
         <div className={styles.cardCarrousel}>
           <Link href={`/Empreendimento/${data?.slug}`} title={`Conheça o empreedimento imobilíario da VilaSul: ${data?.type} ${data?.titulo}`}>
             <div className={styles.mainImageHere} style={{backgroundImage: `url(${data?.img})`}}>
@@ -84,20 +84,22 @@ export default function Empreendimentos() {
             <div className={styles.DetailsHere}>
                 <div className={styles.IconHere}>
                   <div className={styles.divIcon}>
-                    <p>{data?.size}</p>
+                    <p><Image src="/size.svg" width={20} height={15} alt="Tamanho dos imoveis da Vila Sul"></Image>{data?.size}</p>
                   </div>
                   <div className={styles.divIcon}>
-                    <p>{data?.vagas}</p>
+                    <p><Image src="/vagas.svg" width={20} height={15} alt="Numero de vagas dos imoveis da Vila Sul"></Image>{data?.vagas}</p>
                   </div>
                   <div className={styles.divIcon}>
-                    <p>{data?.imovel}</p>
+                    <p><Image src="/imovel.svg" width={20} height={15} alt="Tipo de imoveis da Vila Sul"></Image>{data?.imovel}</p>
                   </div>
                 </div>
                 <div className={styles.end}>
                   <p>{data?.endereco}</p>
                 </div>
             </div>
-            <div className={styles.borderDetail}></div>
+            <br />
+            <div className={styles.borderDetail}>.</div>
+ 
             <p className={styles.contrato}><strong>{data?.contrato}</strong></p>
             <div className={styles.buttonHere}>
               <Link href={`/Empreendimento/${data?.slug}`} title={`Conheça o empreedimento imobilíario da VilaSul: ${data?.type} ${data?.titulo}`}>

@@ -110,7 +110,7 @@ export default function Navbar() {
                     <li>
                         <Link href="/">
                             <button className={styles.mainButton}>
-                                <p>Área do Cliente</p>
+                                <p><Image src="/userArea.svg" width={20} alt="Conheça a área do client da Vila Sul" height={20}></Image> Área do Cliente</p>
                             </button>
                         </Link>
                     </li>
