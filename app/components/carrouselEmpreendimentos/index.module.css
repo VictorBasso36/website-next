@@ -184,7 +184,7 @@
 .mainButton p{
     font-size: 25px;
     font-weight: bold;
-    color: var(--mainColor);
+    color: var(--textBlackColor);
 }
 
 .borderDetail{
