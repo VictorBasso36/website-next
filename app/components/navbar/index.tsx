@@ -28,27 +28,24 @@ export default function Navbar() {
                     <ul>
                         <li>
                             <Link href="/">
-                                <p><strong>Home</strong></p>
+                                {pathname === "/Contato" ? <p><strong>Home</strong></p> : <p>Home</p>}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <p>Lançamentos</p>
+                            <Link href="/Portfolio">
+                                {pathname === "/Portfolio" ? <p><strong>Portfólio</strong></p> : <p>Portfólio</p>}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <p>Portfólio</p>
+                            <Link href="/InvistaConosco">
+                                {pathname === "/InvistaConosco" ? <p><strong>Invista conosco</strong></p> : <p>Invista conosco</p>}
+         
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <p>Invista conosco</p>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/">
-                                <p>Contato</p>
+                            <Link href="/Contato">
+                                {pathname === "/InvistaConosco" ? <p><strong>Contato</strong></p> : <p>Contato</p>}
+                              
                             </Link>
                         </li>
                         <li>
@@ -85,27 +82,29 @@ export default function Navbar() {
                 <ul>
                     <li>
                         <Link href="/">
-                            <p><strong>Home</strong></p>
+                            {pathname === "/" ? <p><strong>Home</strong></p> : <p>Home</p>}
                         </Link>
                     </li>
                     <li>
-                        <Link href="/">
-                            <p>Lançamentos</p>
+                        <Link href="/#Lancamentos">
+                            {pathname === "/Lancamentos" ? <p><strong>Lançamentos</strong></p> : <p>Lançamentos</p>}
                         </Link>
                     </li>
                     <li>
-                        <Link href="/">
-                            <p>Portfólio</p>
+                        <Link href="/Portfolio">
+                            {pathname === "/Portfolio" ? <p><strong>Portfólio</strong></p> : <p>Portfólio</p>}
                         </Link>
                     </li>
                     <li>
-                        <Link href="/">
-                            <p>Invista conosco</p>
+                        <Link href="/InvistaConosco">
+                            {pathname === "/InvistaConosco" ? <p><strong>Invista conosco</strong></p> : <p>Invista conosco</p>}
+                        
                         </Link>
                     </li>
                     <li>
-                        <Link href="/">
-                            <p>Contato</p>
+                        <Link href="/Contato">
+                            {pathname === "/Contato" ? <p><strong>Contato</strong></p> : <p>Contato</p>}
+                      
                         </Link>
                     </li>
                     <li>
