@@ -37,13 +37,13 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/InvistaConosco">
+                            <Link href="/">
                                 {pathname === "/InvistaConosco" ? <p><strong>Invista conosco</strong></p> : <p>Invista conosco</p>}
          
                             </Link>
                         </li>
                         <li>
-                            <Link href="/Contato">
+                            <Link href="/">
                                 {pathname === "/InvistaConosco" ? <p><strong>Contato</strong></p> : <p>Contato</p>}
                               
                             </Link>
@@ -96,13 +96,13 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/InvistaConosco">
+                        <Link href="/">
                             {pathname === "/InvistaConosco" ? <p><strong>Invista conosco</strong></p> : <p>Invista conosco</p>}
                         
                         </Link>
                     </li>
                     <li>
-                        <Link href="/Contato">
+                        <Link href="/">
                             {pathname === "/Contato" ? <p><strong>Contato</strong></p> : <p>Contato</p>}
                       
                         </Link>
