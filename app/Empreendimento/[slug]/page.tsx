@@ -60,7 +60,7 @@ export default function Empreendimento({ params }: { params: { slug: string } })
   }, []);
 
   const content = finalData.find((objeto: any) => objeto.slug === search.toString());
-  console.log(content?.enderecoMaps)
+  if(!content) return null
   return (
     <>
       

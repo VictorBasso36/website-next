@@ -1,0 +1,109 @@
+.mainContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('/bgPortfolio.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.mainContentContainer{
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    height: auto;
+    min-height: 400px;
+    align-items: center;
+
+}
+
+.mainContentContainer h1{
+    font-size: 45pt;
+    line-height: 90%;
+    margin-bottom: 50px;
+    color: var(--textBlackColor);
+}
+
+.mainContentContainer h1 span{
+    background: rgb(5,144,214);
+    background-clip: text;
+    background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .mainContent{
+        background-image: url('/bgPortfolio.svg');
+        background-position-x: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .mainContent{
+        background-image: url('/bgPortfolio.svg');
+        background-position-x: 600px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .mainContent{
+        background-image: url('/bgPortfolio.svg');
+        background-position-x: 600px;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .mainContent{
+        background-image: url('/bgPortfolio.svg');
+        background-position-x: unset;
+        background-position-y: 200px;
+        background-size: cover;
+    }
+    .mainContentContainer{
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        height: auto;
+        min-height: 400px;
+        align-items: flex-start;
+        justify-content: center;
+    
+    }
+
+    .mainContentContainer h1{
+        font-size: 30pt;
+        margin-top: 60px;
+        line-height: 90%;
+        margin-bottom: 50px;
+        justify-content: center;
+        
+        text-align: center;
+        color: var(--textBlackColor);
+    }
+    
+    .mainContentContainer h1 span{
+        background: rgb(5,144,214);
+        background-clip: text;
+        background: linear-gradient(180deg, rgba(5,144,214,1) 28%, rgba(23,103,179,1) 64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    .mainContentContainer h1{
+        font-size: 20pt;
+        margin-top: 80px;
+        line-height: 90%;
+        margin-bottom: 50px;
+        justify-content: center;
+        
+        text-align: center;
+        color: var(--textBlackColor);
+    }
+}
