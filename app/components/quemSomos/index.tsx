@@ -6,7 +6,7 @@ import ButtonMain from "../buttonMain";
 
 export default function QuemSomos() {
   return (
-    <section className={styles.main}>
+    <section className={styles.main} id="InvestaConosco" >
       <div className={styles.mainContainer}>
         <h3>O que <strong>fazemos de <span>melhor</span></strong>:</h3>
         <p className={styles.quemSomosText}>

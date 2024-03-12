@@ -37,19 +37,19 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                        <Link href="/#InvestaConosco">
                                 {pathname === "/InvistaConosco" ? <p><strong>Invista conosco</strong></p> : <p>Invista conosco</p>}
          
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/#Contato">
                                 {pathname === "/InvistaConosco" ? <p><strong>Contato</strong></p> : <p>Contato</p>}
                               
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="https://adm059450.superlogica.net/clients/areadocliente" target="_blank">
                                 <button className={styles.mainButton}>
                                     <p><strong>Área do Cliente</strong></p>
                                 </button>
@@ -87,28 +87,29 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link href="/#Lancamentos">
-                            {pathname === "/Lancamentos" ? <p><strong>Lançamentos</strong></p> : <p>Lançamentos</p>}
+                            {pathname === "/Lancamentos" || pathname.includes('/Empreendimento') ? <p><strong>Lançamentos</strong></p> : <p>Lançamentos</p>}
                         </Link>
                     </li>
+
                     <li>
                         <Link href="/Portfolio">
                             {pathname === "/Portfolio" ? <p><strong>Portfólio</strong></p> : <p>Portfólio</p>}
                         </Link>
                     </li>
                     <li>
-                        <Link href="/">
+                        <Link href="/#InvestaConosco">
                             {pathname === "/InvistaConosco" ? <p><strong>Invista conosco</strong></p> : <p>Invista conosco</p>}
                         
                         </Link>
                     </li>
                     <li>
-                        <Link href="/">
+                        <Link href="/#Contato">
                             {pathname === "/Contato" ? <p><strong>Contato</strong></p> : <p>Contato</p>}
                       
                         </Link>
                     </li>
                     <li>
-                        <Link href="/" title="Conheça o Vila Sul Empreendimentos - Melhores Imovéis para investir !">
+                        <Link href="https://adm059450.superlogica.net/clients/areadocliente" target="_blank" title="Conheça o Vila Sul Empreendimentos - Melhores Imovéis para investir !">
                             <button className={styles.mainButton}>
                                 <p><Image src="/userArea.svg" width={20} alt="Conheça a área do client da Vila Sul" height={20}></Image> Área do Cliente</p>
                             </button>

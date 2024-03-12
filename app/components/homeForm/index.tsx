@@ -6,7 +6,7 @@ import ButtonMain from "../buttonMain";
 
 export default function HomeForm() {
   return (
-    <section className={styles.main}>
+    <section className={styles.main} id="Contato">
       <div className={styles.mainContainer}>
         <form action="">
           <h4>

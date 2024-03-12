@@ -114,7 +114,7 @@ export default function Empreendimentos() {
   ));
     console.log(larguraDaJanela)
   return (
-    <section className={styles.main}>
+    <section className={styles.main} id="Lancamentos">
       <div className={styles.mainContainer}>
         <h2>Seu futuro <strong>te <span>espera:</span></strong></h2>
         <p className={styles.titleDescription}>Conheça unidades disponíveis para <strong>venda</strong> e <strong>locação.</strong></p>
