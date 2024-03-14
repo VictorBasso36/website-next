@@ -104,17 +104,23 @@ export default function Empreendimento({ params }: { params: { slug: string } })
           <iframe className={styles.mainIframe} src={content?.enderecoMaps} width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy={"no-referrer-when-downgrade"}></iframe>
         }
         <div className={styles.gradientHere}>
+          <br />
+          <br />
+          <br />
+          <br />
           {
             content?.fotos && <Fotos data={content?.fotos} />
           }
+          <br />
+          <br />
+          <br />
+          <br />
           {
             content?.progresso && <Status data={content?.progresso} key={1}/>
           }
           <br />
           <br />
-          <br />
-          <br />
-          <br />
+
         </div>
         <HomeForm />
         <div className={styles.quemSomosImage} style={{backgroundImage: 'url("/responsivoForms.png")' }} ></div>

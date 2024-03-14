@@ -23,7 +23,7 @@ export default function Status({data}: StatusProps) {
 
               <li key={index}><div className={styles.bgHere}
               style={{
-                background: `linear-gradient(90deg, rgba(255,255,255,1)  ${item?.percent}, rgba(137,175,212,0.4) ${item?.percent})`
+                background: `linear-gradient(90deg, rgba(255,255,255,1)  ${item?.percent}, rgba(255,255,255,0.4) ${item?.percent})`
               }}
               ><p>{item.name}</p></div><div className={styles.percentHere}><p>{item.percent} </p></div></li>
             

@@ -212,6 +212,7 @@
     border: none;
     border-radius: 12px;
     overflow: hidden;
+    background-color: #3c4317!important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -226,7 +227,7 @@
     align-items: center;
     justify-content: center;
     transition: all 500ms ease-in-out;
-    background-color: var(--mainColor);
+    background-color: #90aa04;
 }
 
 .texthere{
@@ -245,12 +246,12 @@
     font-weight: bold;
 }
 
-.main:hover .DetailMain{
-    background-color: var(--mainBoldColor);
+.DetailMain:hover{
+    background-color: #3c4317!important;
 }
 
-.main:hover .texthere{
-    background-color: var(--mainColor);
+.texthere:hover{
+    background-color: #90aa04!important;
 }
 
 
